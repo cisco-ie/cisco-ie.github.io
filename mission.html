@@ -12,6 +12,28 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <link rel="icon" href="http://harmonynfv.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<script language="javascript"> 
+function showonlyonev2(thechosenone) {
+    var polaroid = document.getElementsByTagName("div");
+        for(var x=0; x<polaroid.length; x++) {
+            name = polaroid[x].getAttribute("class");
+            if (name == 'polaroid-2') {
+                if (polaroid[x].id == thechosenone) {
+                    if (polaroid[x].style.display == 'block') {
+                        polaroid[x].style.display = 'none';
+                    }
+                    else {
+                        polaroid[x].style.display = 'block';
+                    }
+                }
+                else {
+                    polaroid[x].style.display = 'none';
+                }
+            }   
+     }
+}
+</script>
+
 </head>
 
 <body>
@@ -61,6 +83,37 @@
             <div id="description-2" style="display:inline block;float:left;color:#333;font-size:16px;max-width:800px;padding-left:20px;border-left:1px solid #333;margin-top:20px;">
               Big data. IoT. Software-Defined Networking. The list of (relatively) new, important and disruptive technologies goes on and on. It proves an undeniable fact: we are at an inflection point in many of our technology industries. Networks are changing — the need for data, security and visibility is at an all time high. Hardware is transitioning — we’re looking for ways to inject as much intelligence as possible into devices, while simultaneously reducing operational and maintenance costs. Collaboration is essential, but requires encryption and accessibility.
             </div>        
+          </div>
+
+          <div class="leadspace-buttons" style="text-align:center;margin:0 auto;position:relative;top:30px;">
+            <a id="myHeader1-2" href="javascript:showonlyonev2('polaroid1-2');" title="Developing">
+              <p class="btn btn-primary btn-lg btn-custom-jazz" style="width:300px;height:auto;margin-top:20px;margin:10px;font-size:20px;">Developing On<br><b>Cisco's Portfolio</b></p>
+            </a>
+            <a id="myHeader2-2" href="javascript:showonlyonev2('polaroid2-2');" title="Co-Development">
+              <p class="btn btn-primary btn-lg btn-custom-bm" style="width:300px;height:auto;font-size:20px;">Co-Development With<br><b>Industry Leaders</b></p>
+            </a>
+            <a id="myHeader3-2" href="javascript:showonlyonev2('polaroid3-2');” title=" open="" source"="">
+              <p class="btn btn-primary btn-lg btn-custom-dw" style="width:300px;height:auto;margin-top:20px;margin:10px;font-size:20px;">Open Source<br><b>Commitment</b></p>
+            </a>
+          </div>
+
+
+          <div class="mission-block">
+            <div class="polaroid-intro" id="Intro">
+              Click to explore our mission.
+            </div>
+
+            <div class="polaroid-2" id="polaroid1-2">
+              <b>Developing on Cisco’s Portfolio</b><br>Dinosaurs are a diverse group of reptiles of the clade Dinosauria that first appeared during the Triassic. Although the exact origin and timing of the evolution of dinosaurs is the subject of active research,[1] the current scientific consensus places their origin between 231 and 243 million years ago.[2] They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201 million years ago. Their dominance continued through the Jurassic and Cretaceous periods and ended when the Cretaceous–Paleogene extinction event led to the extinction of most dinosaur groups 66 million years ago.
+            </div>
+
+            <div class="polaroid-2" id="polaroid2-2">
+              <b>Co-Development with Industry Leaders</b><br>Dinosaurs are a diverse group of reptiles of the clade Dinosauria that first appeared during the Triassic. Although the exact origin and timing of the evolution of dinosaurs is the subject of active research,[1] the current scientific consensus places their origin between 231 and 243 million years ago.[2] They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201 million years ago. Their dominance continued through the Jurassic and Cretaceous periods and ended when the Cretaceous–Paleogene extinction event led to the extinction of most dinosaur groups 66 million years ago.
+            </div>
+
+            <div class="polaroid-2" id="polaroid3-2">
+              <b>Open Source Commitment</b><br>Dinosaurs are a diverse group of reptiles of the clade Dinosauria that first appeared during the Triassic. Although the exact origin and timing of the evolution of dinosaurs is the subject of active research,[1] the current scientific consensus places their origin between 231 and 243 million years ago.[2] They became the dominant terrestrial vertebrates after the Triassic–Jurassic extinction event 201 million years ago. Their dominance continued through the Jurassic and Cretaceous periods and ended when the Cretaceous–Paleogene extinction event led to the extinction of most dinosaur groups 66 million years ago.
+            </div>
           </div>
 
         </div>

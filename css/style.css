@@ -730,3 +730,41 @@ text-decoration:none;
     margin-top:-15px;
     background-color:#333333;
 }
+
+div.mission-reveal {
+	max-width: 600px;
+	font-family: HelveticaNeue;
+	color: white;
+	height:auto:
+	background-color:#333333;
+}
+
+div.mission-block {
+	background: url("http://i.imgur.com/xglXtQ9.png");
+	background-position: top;
+	height:auto;
+	width:100%;
+	margin-top: 20px;
+	min-height: 400px;
+}
+
+div.polaroid-2 {
+	display: none;
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 100px
+	background-color:#333;
+}
+
+div.polaroid-intro {
+	display: block;
+	margin: 0 auto;
+	max-width: 600px;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	padding-top: 70px;
+}
