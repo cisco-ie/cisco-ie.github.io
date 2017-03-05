@@ -768,3 +768,30 @@ div.polaroid-intro {
 	color: #fff;
 	padding-top: 70px;
 }
+
+.black_overlay {
+	display: none;
+ 	position: absolute;
+	top: 0%;
+  	left: 0%;
+  	width: 100%;
+	height: 100%;
+	background-color: black;
+  	z-index: 1001;
+  	-moz-opacity: 0.8;
+	opacity: .80;
+  	filter: alpha(opacity=80);
+}
+
+.white_content {
+  	display: none;
+  	position: absolute;
+  	left: 16%;
+  	width: 70%;
+  	height: 70%;
+  	padding: 20px;
+  	border: 6px solid black;
+  	background-color: white;
+  	z-index: 1002;
+  	overflow: auto;
+}
