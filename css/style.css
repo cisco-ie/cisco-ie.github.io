@@ -759,6 +759,17 @@ div.polaroid-2 {
 	background-color:#333;
 }
 
+div.dev_button:hover + div.polariod-2 {
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        padding-top: 100px
+        background-color:#333;
+}
+
 div.polaroid-intro {
 	display: block;
 	margin: 0 auto;
