@@ -7,4 +7,6 @@
 	 "link": "https://github.com/HarmonyNFV"},
         {"name": "acmeair",
           "type": "org"},
+        {"name": "cisco-ie",
+	  "type": "org"},
     ];
