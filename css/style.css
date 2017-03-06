@@ -797,3 +797,16 @@ div.polaroid-intro {
   	z-index: 1002;
   	overflow: auto;
 }
+
+.close_button {
+        top:0;
+        right:0;
+        position:absolute;
+        display:block;
+        width:20px;
+        height:20px;
+        background-color:#333;
+        color:#fff;
+        text-align:center;
+        vertical-align:center;
+}
