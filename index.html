@@ -141,7 +141,7 @@
           var $item = $("<div>").addClass("card pin col-sm-5 col-md-4 col-lg-3 " + (repo.language || '').toLowerCase() + " "+repo.name.toLowerCase());
           var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
 
-          $link.append($("<git_button>").html("<div class='org'><a class="github-button" href="https://github.com/cisco-ie/ansible/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/cisco-ie/ansible/network" data-count-api="/repos/cisco-ie/ansible#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork cisco-ie/ansible on GitHub">git"));
+          $link.append($("<git_button>").html("<div class='org'><a class="github-button" href="https://github.com/cisco-ie/ansible/fork">git"));
           $link.append($("<h4>").html(repo.name + "<div class='org'><a href='"+repo.owner.html_url+"'>("+repo.owner.login+")"));
 
           $link.append($("<h5>").text((repo.language != null) ? repo.language : ""));
