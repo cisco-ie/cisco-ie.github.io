@@ -203,7 +203,7 @@
        	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
        	  return;
        }
-       var uri = https://api.github.com/users/cisco-ie/repos;
+       var uri = "https://api.github.com/users/cisco-ie/repos";
 
        $.getJSON(uri, function (result) {
          if (!Array.isArray(result)) {
