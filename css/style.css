@@ -759,7 +759,7 @@ div.polaroid-2 {
 	background-color:#333;
 }
 
-div.dev_button:hover + div.polaroid-2 {
+div.dev_button:hover + #polaroid1-2.div.polaroid-2 {
         display: block;
         margin: 0 auto;
         max-width: 600px;
