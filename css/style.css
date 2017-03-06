@@ -823,3 +823,10 @@ div.polaroid-intro {
 
 
 
+.git_button {
+        font-size: 16px;
+        color: #331f30;
+        margin-top: 0;
+        padding: 3px;
+        padding-top: 10px;
+}
