@@ -749,12 +749,6 @@ div.mission-block {
 }
 
 div.polaroid-2 {
-        background: url("http://i.imgur.com/xglXtQ9.png");
-        background-position: top;
-        height:auto;
-        width:100%;
-        margin-top: 20px;
-        min-height: 400px;
 	display: none;
 	margin: 0 auto;
 	max-width: 600px;
