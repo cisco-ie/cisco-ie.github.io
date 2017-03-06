@@ -12,7 +12,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
 <link href="./css/style.css" rel="stylesheet">
-<link rel="icon" href="http://harmonynfv.github.io/favicon.ico" type="image/vnd.microsoft.icon"/>
+<link rel="icon" href="http://cisco-ie.github.io/favicon.ico" type="image/vnd.microsoft.icon"/>
 </head>
 <body style="">
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -203,10 +203,8 @@
        	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
        	  return;
        }
-       var uri = "https://api.github.com/"+orgs.type+"s/"+org + reposcmd
-       + "?per_page=1000"
-       + "&client_id=1bafa09b6086eec7afb4"
-       + "&client_secret=7e6422a0a2e24f0d0ecb7521a63990b5758c9cc8";
+       var uri = https://api.github.com/users/cisco-ie/repos
+
        $.getJSON(uri, function (result) {
          if (!Array.isArray(result)) {
            result = [].concat(result);
@@ -221,13 +219,6 @@
               if (repo.fork === true) {  // if this is a fork, save the index
                 forks.push(i);
               }
-            });
-
-            // remove forks from the view
-            $.each(forks, function(i, forkindex) {
-              var indextoremove = forkindex - i; // account for prior splices
-              if(DEBUG) console.log('removing forked entry: ' + repos[indextoremove].full_name);
-              repos.splice(indextoremove,1);
             });
 
 		// pre sort by how recently the repo was modified
