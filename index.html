@@ -26,6 +26,7 @@
           <a class="navbar-link" href="projects.html">Projects</a>
           <a class="navbar-link" href="mission.html">Mission</a>
           <a class="navbar-link" href="team.html">Team</a>
+        </div>
       </div>
     </div>
   </div>
@@ -42,37 +43,36 @@
         <a href="https://github.com/HarmonyNFV">
           <p class="btn btn-primary btn-lg btn-custom-bm">Discover Segment Routing with <b>Harmony NFV</b>
           </p>
-         </a>
-         <a href="https://github.com/cisco-ie/webex-google-calendar">
+        </a>
+        <a href="https://github.com/cisco-ie/webex-google-calendar">
           <p class="btn btn-primary btn-lg btn-custom-dw">Engage your audiences through the <b>Spark Collaboration Suite</b>
           </p>
-         </a>
-        </div>
-      </div>
-    </div>
-
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-             <div id="wrapper">
-              <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
-              
-              <div id="repos" class="columns collapse-group">
-               
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
+        </a>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div id="wrapper">
+          <label for="search" class="col-lg-4 control-label search" style=""><span>Search</span> <input type="search" id="search" class="search-query span3 filter input-medium" placeholder="Our Repos..."></label>
+          <div id="repos" class="columns collapse-group">
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
   <footer>
     <div class="container">
       <p>© Cisco 2017</p>
     </div>
   </footer>
-</div> <!-- /container -->
+
+</div> 
+<!-- /container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -195,10 +195,6 @@
      page = page || 1;
      reposcmd = orgs.type === "repo" ? "" : "/repos";
 
-	   // These client tokens are for a dummy app, and there is no user specific information that we get, so
-	   // all in all, pretty safe to expose this here.
-
-       // there are three supported request types: org, user and repo. Syntax differs.
        if((orgs.type !== 'org') && (orgs.type !== 'user') && (orgs.type !== 'repo')) {
        	  console.log('** Unknown type “'+orgs.type+'” for org “'+org+'” — check “orgs.js” for typo.'); 
        	  return;
