@@ -12,6 +12,28 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 <link href="./css/style.css" rel="stylesheet">
 <link rel="icon" href="http://harmonynfv.github.io/favicon.ico" type="image/vnd.microsoft.icon">
+<script type="text/javascript">
+    // Initialize Variables
+    var closePopup = document.getElementById("popupclose");
+    var overlayz = document.getElementById("overlayz");
+    var popup = document.getElementById("popup");
+    var button = document.getElementById("button");
+    // Close Popup Event
+    overlay.onclick = function() {
+        overlayz.className = '';
+        popup.className = '';
+    };
+    // Close Popup Event
+    closePopup.onclick = function() {
+        overlayz.className = '';
+        popup.className = '';
+    };
+    // Show Overlay and Popup
+    button.onclick = function() {
+        overlayz.className = 'show';
+        popup.className = 'show';
+    }
+</script>
 </head>
 
 <body>
@@ -33,6 +55,21 @@
     </a>
   </div>
 
+<div id="maincontent">
+    <h1>Slide Down<h2>
+    <button id="button">Show Popup</button>
+</div>
+
+<div data-pop="slide-down" id="popup">
+    <div class="popupcontrols">
+        <span id="popupclose">&times;</span>
+    </div>
+    <div class="popupcontent">
+        <h1>Some Popup Content</h1>
+    </div>
+</div>
+
+<div id="overlayz"></div>
 
   <div id="fade" class="black_overlay"></div>
   <div id="daniel" class="white_content">This is the Daniel's bio.<a href="javascript:void(0)" onclick="document.getElementById('daniel').style.display='none';document.getElementById('fade').style.display='none'"><div class="close_button">X</div></a></div>
