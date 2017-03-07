@@ -854,3 +854,10 @@ div.polaroid-intro {
         padding: 3px;
         padding-top: 10px;
 }
+
+
+.glow-button:hover {
+   -moz-box-shadow: 0px 0px 4px #2d3973;
+  -webkit-box-shadow: 0px 0px 4px #4b56a9;
+}
+
