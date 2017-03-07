@@ -722,6 +722,15 @@ div.gallery {
 text-decoration:none;
 }
 
+.mainpage-bar {
+    border-radius:0px;
+    margin:0 auto;
+    padding:4px;
+    text-align:center;
+    margin-top:-15px;
+    background-color:#333333;
+}
+
 .page-bar {
     border-radius:0px;
     margin:0 auto;
