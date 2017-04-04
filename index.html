@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Innovation Edge is a software-development team at Cisco Systems that creates PoCs and enhancements on Cisco products to fit customer needs and to explore new cutting-edge technologies."/>
+	<meta name="keywords" content="software development, Cisco, innovation"/>
+	<title>Innovation Edge</title>
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/header-basic.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/hover.css" >
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Cookie' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="ie-main">
+		<header class="header-basic">
+			<div class="header-limiter">
+				<h1><a href="index.html">Innovation Edge</a></h1>
+				<nav>
+					<a href="mission.html">Mission</a>
+					<a href="#">Team</a>
+					<a href="#">Projects</a>
+				</nav>
+			</div>
+		</header>			
+	</div>
+		
+	<section id="intro" class="main style1 dark fullscreen">
+		<div class="content">
+			<div class="jumbotron-header">Innovation Edge</div>
+			<footer class="jumbotron-footer">
+				<a href="#one" class="button style2 down">More</a>
+			</footer>
+		</div>
+	</section>
+	
+	<section id="one" class="main style1 dark fullscreen">
+		<div style="position:absolute;top:40px;">
+            <div class="jumbotron-header-repos">Repos</div>
+            <div id="repo-buttons">
+            	<button id="cur-repo-button" class="hvr-glow hvr-shadow-radial" onclick="showCurrentRepos()">Current</button>
+                <button id="dev-repo-button" class="hvr-glow hvr-shadow-radial" onclick="showDevelopingRepos()">Developing</button>
+            </div>    
+  
+            <div id="currentRepos" class="containerz animated pulse">
+                <a type="button" data-toggle="modal" data-target="#pipedownModal">  
+                    <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">Pipedown</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:45px;">Pipedown</div>
+                            <div class="repo-container-content">CDN router monitoring tool for data center connectivity</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-toggle="modal" data-target="#solenoidModal">  
+                    <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">Solenoid</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:45px;">Solenoid</div>
+                            <div class="repo-container-content">App that injects routes directly into Cisco's IOS-XR RIB table</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-toggle="modal" data-target="#grpcModal">    
+                <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">gRPC Clients</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:45px;">gRPC Clients</div>
+                            <div class="repo-container-content">IOS-XR gRPC NodeJS connectivity library</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="display:none;" id="devRepos" class="containerz animated pulse">
+                <a type="button" data-toggle="modal" data-target="#voltronModal"> 
+                    <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">Voltron</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:50px;"">Voltron</div>
+                            <div class="repo-container-content">Segment Routing Software Solution</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-toggle="modal" data-target="#utdmModal"> 
+                    <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">UTDM</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:40px;"">UTDM</div>
+                            <div style="font-weight:normal;font-size:14px;">Universal Telemetry Data Mapper to map identifiers from SNMP, YANG, CLI, etc. to their associated ground truth values</div>
+                        </div>
+                    </div>
+                </a>
+
+                <a type="button" data-toggle="modal" data-target="#webexModal">
+                    <div class="repo-container hvr-grow-shadow">
+                        <div class="repo-title disappears">WebEx with G-Cal</div>
+                        <div class="appears text-adj">
+                            <div style="margin-top:40px;"">WebEx with G-Cal</div>
+                            <div style="font-weight:normal;font-size:14px;">Seamlessly attach your WebEx personal meeting rooms to your Google calendar events on any device</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div id="pipedownModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">Pipedown</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">CDN Monitor</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>The end goal of the Pipedown is to monitor a CDN router and ensure that it has a stable link to the data center, and if it does not, take it offline by removing its link to the internet.</p>
+                        </div>
+                        <div style="display:block;padding-top:30px;padding-bottom:30px;" class="modal-footer">
+                            <a class="github-button" href="https://github.com/cisco-ie/pipedown/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/cisco-ie/pipedown/watchers" data-count-api="/repos/cisco-ie/pipedown#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch cisco-ie/pipedown on GitHub">Watch</a>
+                            <a class="github-button" href="https://github.com/cisco-ie/pipedown" data-icon="octicon-star" data-style="mega" data-count-href="/cisco-ie/pipedown/stargazers" data-count-api="/repos/cisco-ie/pipedown#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star cisco-ie/pipedown on GitHub">Star</a>
+                            <a class="github-button" href="https://github.com/cisco-ie/pipedown/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/cisco-ie/pipedown/network" data-count-api="/repos/cisco-ie/pipedown#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork cisco-ie/pipedown on GitHub">Fork</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="solenoidModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">Solenoid</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">Route Injector</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>Solenoid takes a third-party BGP protocol and sends the BGP updates to Cisco's RIB table on the IOS-XR devices, allowing for increased flexibility over the BGP protocols used on the box.</p>
+                        </div>
+                        <div style="display:block;padding-top:30px;padding-bottom:30px;" class="modal-footer">
+                            <a class="github-button" href="https://github.com/ios-xr/Solenoid/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/ios-xr/Solenoid/watchers" data-count-api="/repos/ios-xr/Solenoid#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch ios-xr/Solenoid on GitHub">Watch</a>
+                            <a class="github-button" href="https://github.com/ios-xr/Solenoid" data-icon="octicon-star" data-style="mega" data-count-href="/ios-xr/Solenoid/stargazers" data-count-api="/repos/ios-xr/Solenoid#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star ios-xr/Solenoid on GitHub">Star</a>
+                            <a class="github-button" href="https://github.com/ios-xr/Solenoid/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/ios-xr/Solenoid/network" data-count-api="/repos/ios-xr/Solenoid#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork ios-xr/Solenoid on GitHub">Fork</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="grpcModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">gRPC Clients</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">Connectivity Libraries</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>Provides connectivity support between the IOS-XR gRPC server and a client application built using NodeJS.</p>
+                        </div>
+                        <div style="display:block;padding-top:30px;padding-bottom:30px;" class="modal-footer">
+                            <a class="github-button" href="https://github.com/cisco-grpc-connection-libs/ios-xr-grpc-nodejs/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/cisco-grpc-connection-libs/ios-xr-grpc-nodejs/watchers" data-count-api="/repos/cisco-grpc-connection-libs/ios-xr-grpc-nodejs#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch cisco-grpc-connection-libs/ios-xr-grpc-nodejs on GitHub">Watch</a>
+                            <a class="github-button" href="https://github.com/cisco-grpc-connection-libs/ios-xr-grpc-nodejs" data-icon="octicon-star" data-style="mega" data-count-href="/cisco-grpc-connection-libs/ios-xr-grpc-nodejs/stargazers" data-count-api="/repos/cisco-grpc-connection-libs/ios-xr-grpc-nodejs#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star cisco-grpc-connection-libs/ios-xr-grpc-nodejs on GitHub">Star</a>
+                            <a class="github-button" href="https://github.com/cisco-grpc-connection-libs/ios-xr-grpc-nodejs/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/cisco-grpc-connection-libs/ios-xr-grpc-nodejs/network" data-count-api="/repos/cisco-grpc-connection-libs/ios-xr-grpc-nodejs#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork cisco-grpc-connection-libs/ios-xr-grpc-nodejs on GitHub">Fork</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="voltronModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">Voltron</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">Segment Routing Software</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>A software solution that will use Segment Routing to enhance network management capabilities.</p>
+                        </div>
+                        <div style="display:block;padding-top:20px;padding-bottom:30px;" class="modal-footer">
+                            This project is still in development.<br>You can request access to this repo by emailing<b><a href="mailto:kasivia@cisco.com?Subject=Requesting%20Voltron%20Access" target="_top">Karam Sivia</a></b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="utdmModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">UTDM</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">Telemetry Mapper</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>Universal Telemetry Data Mapper to map identifiers from SNMP, YANG, CLI, etc. to their associated ground truth values.</p>
+                        </div>
+                        <div style="display:block;padding-top:20px;padding-bottom:30px;" class="modal-footer">
+                           This project is still in development.<br>You can request access to this repo by emailing<b><a href="mailto:remcampb@cisco.com?Subject=Requesting%20UTDM%20Access" target="_top">Remington Campbell</a></b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="webexModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLiveLabel" style="font-family: 'Ubuntu', sans-serif;display:none;">
+                <div style="margin-top: 170px;max-width:600px;" class="modal-dialog" role="document">
+                    <div style="box-shadow:0 0 1em 0 rgba(0, 0, 0, 0.5);background:#edfaff;" class="modal-content">
+                        <button type="button" style="width:5px;position:relative;left:96%;top:3px;height:auto;" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                        </button>
+                        <div style="padding-top:0px;display:block;" class="modal-header">
+                            <h1 style="font-size:3em;font-weight:normal;" class="modal-title" id="exampleModalLiveLabel">WebEx Development</h1>
+                            <h3 style="font-size: 1.5em;color: #77beda;">G-Cal Integration</h3>
+                        </div>
+                        <div style="padding-left:50px;padding-right:50px;padding-top:25px;" class="modal-body">
+                            <p>Seamlessly attach your WebEx personal meeting rooms to your Google calendar events on any device without any plugins, extensions, or domain scripts.</p>
+                        </div>
+                        <div style="display:block;padding-top:20px;padding-bottom:30px;" class="modal-footer">
+                          This project is still in development.<br>You can request access to this repo by emailing<b><a href="mailto:brhim@cisco.com?Subject=Requesting%20WebEx-GCal%20Access" target="_top">Brandon Him</a></b>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.poptrox.min.js"></script>
+	<script src="js/jquery.scrolly.min.js"></script>
+	<script src="js/jquery.scrollex.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/util.js"></script>
+    <script src="js/repo.js"></script>
+
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	
+    <script>   
+   
+    </script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
