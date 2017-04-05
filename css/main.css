@@ -699,7 +699,7 @@ body.is-touch .main {
 
 /* Mission1 */
 #mission1 {
-	background: url("../images/background2.jpg");
+	background: url("../images/background-z.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -707,7 +707,7 @@ body.is-touch .main {
 
 /* Mission2 */
 #mission2 {
-	background: url("../images/background1.jpg");
+	background: url("../images/background-z.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
@@ -816,7 +816,7 @@ body.is-touch .main {
 
 /* Mission3 */
 #mission3 {
-	background: url("../images/background4.jpg");
+	background: url("../images/background-z.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center center;
