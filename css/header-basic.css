@@ -114,6 +114,17 @@
 	font-size: 6em;
 	padding-bottom:20px;
 }
+
+.jumbotron-header-team
+{
+	padding-top:0px;
+	margin-top: 0px;
+	text-shadow:1px 1px 4px rgba(0, 0, 0, 0.5);
+	font-size: 1.5em;
+	padding-bottom:20px;
+	width:50%;
+	margin: 0 auto;
+}
 /* Making the header responsive */
 
 @media all and (max-width: 600px) {
