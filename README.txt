@@ -1,7 +1,6 @@
-Team Website V1.
+Team Website!
 
-V2 will include project pages and team member bios.
-
-NOTE:
-Code is not clean. Jira/Git management is also not clean. Fixing this in next commit.
-Thanks!
+Next steps:
+- team member pictures
+- project demos / documentation
+- better pictures / backgrounds 
